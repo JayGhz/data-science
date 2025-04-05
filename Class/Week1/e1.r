@@ -1,6 +1,6 @@
 library(ggplot2)
 library(dplyr)
-library(gridExtra)  
+library(gridExtra)
 
 # Ejemplo 1
 # Crear un dataframe simple de grafico de barras y grafico circular
