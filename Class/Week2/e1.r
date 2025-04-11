@@ -3,7 +3,8 @@
 ################################################################
 
 # 1. Carga de datos
-data <- read.csv("Class/Week2/titanic_data.csv", header = TRUE, sep = ",")
+setwd("C:/Users/jayka/Documents/Courses/data-science/Class/Week2")
+data <- read.csv("titanic_data.csv", header = TRUE, sep = ",")
 
 # 2. Inspeccionar datos
 View(data)
@@ -188,6 +189,5 @@ aggregate(Age ~ Pclass, data = data, summary)
 ggplot(data) +
   geom_boxplot(aes(x = Pclass, y = Age, fill = Pclass), na.rm = TRUE)
 
-# #6. Save workspace
-setwd("Class/Week2")
-write.csv(data, "titanic_results.csv")
+# #6. Guardar el workspace
+save.image(file = "e1.RData")
